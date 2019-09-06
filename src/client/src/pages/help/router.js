@@ -11,8 +11,9 @@ Vue.use(Router)
 
 export default new Router({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: '/order.html/',
   routes: [
+    {path: '/', redirect: 'tabid=first'},
     {
       path: '/tabid=first', 
       component:dn,

@@ -30,7 +30,7 @@ export default {
   name: 'order',
   methods: {},
   created() {
-    this.$axios.get('./query').then((res, err) => {
+    this.$axios.get('/API/query').then((res, err) => {
       if (err) {
         console.log(err)
       };

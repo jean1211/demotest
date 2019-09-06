@@ -1,6 +1,42 @@
 const path = require('path');
 
 module.exports = {
+pages: {
+    help: {
+      // page 的入口
+      entry: "src/pages/help/main.js",
+      // 模板来源
+      template: "public/order.html",
+      // 在 dist/index.html 的输出
+      filename: "order.html",
+      // 当使用 title 选项时，
+      // template 中的 title 标签需要是 <title><%= htmlWebpackPlugin.options.title %></title>
+      title: "order Page",
+    },
+    register: {
+      // page 的入口
+      entry: "src/pages/register/main.js",
+      // 模板来源
+      template: "public/register.html",
+      // 在 dist/index.html 的输出
+      filename: "register.html",
+      // 当使用 title 选项时，
+      // template 中的 title 标签需要是 <title><%= htmlWebpackPlugin.options.title %></title>
+      title: "register Page",
+    },
+    login: {
+      // page 的入口
+      entry: "src/pages/login/main.js",
+      // 模板来源
+      template: "public/index.html",
+      // 在 dist/index.html 的输出
+      filename: "index.html",
+      // 当使用 title 选项时，
+      // template 中的 title 标签需要是 <title><%= htmlWebpackPlugin.options.title %></title>
+      title: "index Page",
+    },
+  },
+
     // 基本路径
     publicPath: './',
     // 输出文件目录

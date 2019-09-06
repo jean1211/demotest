@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <p>{{message}}</p>
+    <a href="../login.html">退出登录</a>
     <tab></tab>
     <keep-alive>
       <router-view></router-view>
@@ -14,14 +15,6 @@ export default {
     return {
       message: '欢迎使用快递代拿服务！',
       activeName: 'first'
-    }
-  },
-  watch: {
-    'activeName': (val) => {
-      let urlStr = '/tabid=' + val;
-      console.log(urlStr)
-      console.log(this)
-      router.push(urlStr)
     }
   },
   components: {

@@ -68,20 +68,20 @@ export default {
         day = "0" + day
       };
       var new_data = year + '-' + month + '-' + day;
-      // this.$axios({
-      //   method: 'post',
-      //   url: '/query/add',
-      //   data: this.qs.stringify({
-      //     date:new_data,
-      //     time: this.$root.new_time,
-      //     address: this.$refs.address.value,
-      //     name: this.$refs.name.value,
-      //     phone: this.$refs.phnone.value,
-      //     type: this.$root.new_type,
-      //     size: this.$root.new_size,
-      //     number: this.$refs.number.value
-      //   })
-      // })
+      this.$axios({
+        method: 'post',
+        url: '/API/add',
+        data: this.qs.stringify({
+          date:new_data,
+          time: this.$root.new_time,
+          address: this.$refs.address.value,
+          name: this.$refs.name.value,
+          phone: this.$refs.phnone.value,
+          type: this.$root.new_type,
+          size: this.$root.new_size,
+          number: this.$refs.number.value
+        })
+      })
    
     }
 
