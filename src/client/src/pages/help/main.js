@@ -5,9 +5,11 @@ import store from './store'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import qs from 'qs'
-import ElementUI from 'element-ui';
+import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
+import VueCookies from 'vue-cookies'
 
+Vue.use(VueCookies)
 Vue.use(VueAxios, axios)
 Vue.prototype.$axios = axios;
 Vue.prototype.qs = qs  
@@ -23,8 +25,8 @@ new Vue({
     phnone: '',
     number: '',
     new_time: '',
-    new_type: '',
-    new_size: '',
+    new_type: '中通',
+    new_size: '小件',
     order_data:[]
   },
   router,

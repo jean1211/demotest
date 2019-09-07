@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <p>{{message}}</p>
-    <a href="../login.html">退出登录</a>
+    <a href="../login.html" @click='rm'>退出登录</a>
     <tab></tab>
     <keep-alive>
       <router-view></router-view>
@@ -14,12 +14,21 @@ export default {
   data() {
     return {
       message: '欢迎使用快递代拿服务！',
-      activeName: 'first'
+      activeName: 'first',
+      account: ''
     }
   },
   components: {
     tab
   },
+  methods: {
+    rm() {
+      this.$cookies.remove('account')
+    }
+  },
+  created() {
+    this.account = this.$cookies.get('account')
+  }
 }
 
 </script>

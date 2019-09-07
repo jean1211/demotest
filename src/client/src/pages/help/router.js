@@ -7,6 +7,8 @@ import dn from '@/views/代拿.vue'
 import dj from '@/views/代寄.vue'
 import order from '@/views/我的订单.vue'
 import tab from '@/views/tab.vue'
+import VueCookies from 'vue-cookies'
+Vue.use(VueCookies)
 Vue.use(Router)
 
 export default new Router({
@@ -26,6 +28,7 @@ export default new Router({
     {
       path:'/tabid=third',
       component: order,
+
     }
   ]
 })

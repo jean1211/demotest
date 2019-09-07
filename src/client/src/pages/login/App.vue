@@ -39,6 +39,7 @@ export default {
       if(this.input === '' || this.input_password === ''){
         alert('账号或密码不能为空')
       }else{
+      this.$cookies.set('account',this.input)
       this.$axios({
         method: 'post',
         url: '/API/login',
@@ -74,7 +75,6 @@ export default {
             }
           }
           Index = null;
-          console.log(Index)
         }
         //传两个参数，账号和密码
         test(this.input, this.input_password)
