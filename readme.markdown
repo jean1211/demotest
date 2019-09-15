@@ -1,12 +1,12 @@
 # 项目介绍
-## 登录界面##
+## 登录界面 
 - 账号密码输入错误会提醒用户
 
 ![login](https://wx1.sinaimg.cn/mw690/006JXoa0ly1g70idn0rbsj30tx0gtwuq.jpg)
 
 ![login](https://wx2.sinaimg.cn/mw690/006JXoa0ly1g70igcv6gpj30ua0gjtov.jpg)
 
-##注册界面##
+## 注册界面 
 - 账号名重复会提醒用户账号已被注册
 
 ![register](https://wx1.sinaimg.cn/mw690/006JXoa0ly1g70idnfmzpj30u70h3h27.jpg)
@@ -15,7 +15,7 @@
 
 ![sucess](https://wx4.sinaimg.cn/mw690/006JXoa0ly1g70idoj4p6j30tx0mrat0.jpg)
 
-##主界面##
+## 主界面 
 - 新注册账号登陆时，订单界面暂无数据
 
 ![main](https://wx1.sinaimg.cn/mw690/006JXoa0ly1g70idnq0mtj30v20msau4.jpg)
