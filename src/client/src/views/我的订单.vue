@@ -18,7 +18,6 @@
       <el-table-column prop="time" label="送达时间">
       </el-table-column>
     </el-table>
-    <button @click='jiaohu'>jiaohu</button>
   </div>
 </template>
 <script>
@@ -28,24 +27,6 @@ export default {
     }
   },
   name: 'order',
-  methods: {
-    jiaohu() {
-      console.log(this.$cookies.get('account'))
-    }
-  },
-watch:{
-  // console.log(this.$cookies.get('account'));
-  //       this.$axios.get('/API/query', { params: { account: this.$cookies.get('account') } }).then((res, err) => {
-  //         if (err) {
-  //           console.log(err)
-  //         };
-  //         this.order_data.push(...JSON.parse(res.data));
-  //         for (let value of this.order_data) {
-  //           value.date = new Date(value.date).toLocaleString().substring(0, 8);
-  //         }
-  //       })
-
-},
 }
 
 </script>
